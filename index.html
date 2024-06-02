@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Optimism</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Eternal Optimism</a>
+    </nav>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card mt-5">
+                      <div class="card-body life-progress">
+                        <h5 class="card-title">Life Progress</h5>
+                        <p id="current-date-time" class="card-text lead"></p>
+                        <div id="weeks-grid" class="d-flex flex-wrap justify-content-center mb-4"></div>
+                        <p class="quote" id="quote"></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-4 stats">
+                    <div class="card mt-5">
+                        <div class="card-body">
+                            <h5 class="card-title">Completed Weeks</h5>
+                            <p id="completed-weeks" class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Remaining Weeks</h5>
+                            <p id="remaining-weeks" class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Percentage Completed</h5>
+                            <p id="percentage-completed" class="card-text"></p>
+                        </div>
+                    </div>
+                    <div class="note">
+                      <small>Based on the average lifespan of 79 years</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="birthdateModal" tabindex="-1" role="dialog" aria-labelledby="birthdateModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="birthdateModalLabel">Enter Your Birthdate</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="date" id="birthdateInput" class="form-control">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="saveBirthdate">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="motivational-quotes.js"></script>
+    <script src="motivational.js"></script>
+</body>
+</html>

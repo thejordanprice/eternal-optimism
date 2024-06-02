@@ -1,0 +1,47 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.navbar-brand {
+    font-weight: bold;
+}
+.content {
+    flex: 1;
+    padding-bottom: 50px;
+}
+.square {
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    display: inline-block;
+    position: relative;
+}
+.completed { background-color: #28a745; }
+.current { background-color: #ffc107; }
+.remaining { border: 1px solid #6c757d; }
+.container { max-width: 1200px; margin: auto; }
+.quote { 
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+.note {
+    padding-top: 10px;
+    font-style: italic;
+    text-align: center;
+}
+#weeks-grid {
+    max-width: 540px;
+    margin: auto;
+}
+.stats {
+    text-align: left;
+}
+.life-progress {
+    text-align: center;
+}
+#current-date-time {
+    text-align: center;
+}
