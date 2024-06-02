@@ -46,7 +46,7 @@ $(document).ready(function() {
 
         // Update current date/time
         function updateDateTime() {
-            $('#current-date-time').text(`Current Date/Time: ${new Date().toLocaleString()}`);
+            $('#current-date-time').text(`Current Time: ${new Date().toLocaleString()}`);
         }
         setInterval(updateDateTime, 1000);
         updateDateTime();
